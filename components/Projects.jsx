@@ -3,14 +3,14 @@ import { projects } from '../constants'
 
 const Projects = () => {
     return (
-        <div id='projects'>
+        <div id='projects z-100'>
             <h1 className=' text-center lg:text-left text-4xl mb-0 md:text-6xl font-bold md:mb-12 text-zinc-300 mt-6'>Projects</h1>
             <div className='  md:mt-14 text-left md:grid grid-cols-2'>
                 {projects.map(({ id, image, title, description, tags, source, visit }) => {
                     return (
-                            <div className=' m-auto my-20 md:inline-block max-w-sm md:m-12 text-zinc-300 bg-inherit rounded-md shadow-lg shadow-indigo-300/50 pb-8 '>
-                                <div key={id}>
-                                    <img src={image} alt="" className='w-[500px] rounded-md' />
+                            <div className='z-100 m-auto my-20 md:inline-block max-w-sm md:m-12 text-zinc-300 bg-inherit rounded-md shadow-lg shadow-indigo-300/50 pb-8 '>
+                                <div key={id} className='z-100'>
+                                    <img src={image} alt="" className='w-[500px] rounded-md z-100' />
                                     <h1 className='pt-4 text-4xl font-bold text-center text-cyan-300'>{title}</h1>
                                     <div className="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg py-1 m-auto my-4 max-w-[64px] "></div>
                                     <p className='p-2 text-center'>{description}</p>

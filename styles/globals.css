@@ -10,3 +10,21 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+svg {
+    position: absolute;
+    max-width: 500px;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .div-some {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
