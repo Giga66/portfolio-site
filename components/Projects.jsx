@@ -3,7 +3,7 @@ import { projects } from '../constants'
 
 const Projects = () => {
     return (
-        <div id='projects z-100'>
+        <div id='projects' className='z-100'>
             <h1 className=' text-center lg:text-left text-4xl mb-0 md:text-6xl font-bold md:mb-12 text-zinc-300 mt-6'>Projects</h1>
             <div className='  md:mt-14 text-left md:grid grid-cols-2'>
                 {projects.map(({ id, image, title, description, tags, source, visit }) => {

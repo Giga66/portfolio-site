@@ -3,8 +3,10 @@ import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiOutlineMenu, AiOutlineCl
 
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+    const [nav, setNav] = useState(true)
+    const handleClick = () => {
+        setNav(!nav)
+    }
 
 
     return (
@@ -24,6 +26,24 @@ const Navbar = () => {
                 <a href="https://github.com/Giga66?tab=repositories"><AiFillGithub size={20} className='cursor-pointer' /></a>
                 <a href="mailto:gigamail326@gmail.com"><AiOutlineMail size={20} className='cursor-pointer' /></a>
                 <a href="https://www.linkedin.com/in/george-gvasalia/"><AiFillLinkedin size={20} className='cursor-pointer' /></a>
+            </div>
+            {/* 'absolute top-20 right-0 gap-8 p-12 bg-black rounded-lg' */}
+
+            {/* mobile menu */}
+                <AiOutlineMenu size={35} onClick={handleClick} className='absolute top-15 right-3 md:hidden'/>
+            <div className={!nav ? 'absolute top-20 right-0 gap-8 p-12 bg-black rounded-lg ' : 'hidden'}>
+                <div className='flex flex-col gap-12 text-center'>
+                    <a href="#projects">Projects</a>
+                    <a href="#technologies">Technologoies</a>
+                    <a href="#about">About</a>
+
+                    <div className='flex gap-14'>
+                        <a href="https://github.com/Giga66?tab=repositories"><AiFillGithub size={20} className='cursor-pointer' /></a>
+                        <a href="mailto:gigamail326@gmail.com"><AiOutlineMail size={20} className='cursor-pointer' /></a>
+                        <a href="https://www.linkedin.com/in/george-gvasalia/"><AiFillLinkedin size={20} className='cursor-pointer' /></a>
+                    </div>
+
+                </div>
             </div>
 
 
