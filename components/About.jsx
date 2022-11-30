@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const About = () => {
     return (
@@ -13,7 +14,7 @@ const About = () => {
                     <p className='text-center my-4 text-zinc-300 text-2xl max-w-2xl lg:text-left'>I'm after my grduation, and I continue to learn more and deepen my knowledge and skills every day. I love working with the latest technoloiges and to know how they work at the core. I love solving problems and being productive - <span className='font-bold text-sky-400'>a "can do" attitude!</span>
                     </p>
                 </div>
-                <img src="images/edited.png" alt="/" className='m-auto my-4 h-56 rounded-lg lg:mt-48' />
+                <Image src="/images/edited.png" alt="/" className='m-auto my-4 h-56 rounded-lg lg:mt-48' width={230} height={25}/>
             </div>
         </div>
     )

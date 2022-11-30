@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Image from 'next/image'
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between text-zinc-100 text-lg'>
             <div>
-                <img src="/images/Mokoto (1).png" alt="/" />
+                <Image src="/images/Mokoto (1).png" alt="/" width={130} height={25}/>
             </div>
 
 

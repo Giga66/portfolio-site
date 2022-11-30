@@ -17,7 +17,15 @@ export const projects = [
         visit: 'https://gpt3-proj.web.app/',
         id: 1
     },
-    
+    {
+        title: 'Portfolio Site',
+        description: 'Using Next.js and Tailwind I have built this portfolio website',
+        image: '/images/portfolio.png',
+        tags: ['Next.js', 'Tailwind', 'Firebase'],
+        source: 'https://github.com/Giga66/portfolio-site',
+        visit: 'https://portfolio-10e57.firebaseapp.com/',
+        id: 1
+    },
 ]
 
 export const stack = [

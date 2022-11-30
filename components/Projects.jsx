@@ -1,16 +1,17 @@
 import React from 'react'
 import { projects } from '../constants'
+import Image from 'next/image'
 
 const Projects = () => {
     return (
         <div id='projects' className='z-100'>
-            <h1 className=' text-center lg:text-left text-4xl mb-0 md:text-6xl font-bold md:mb-12 text-zinc-300 mt-6'>Projects</h1>
-            <div className='  md:mt-14 text-left md:grid grid-cols-2'>
+            <h1 className=' text-center lg:text-left text-4xl md:text-6xl font-bold text-zinc-300 mt-6'>Projects</h1>
+            <div className='  md:mt-12 text-left md:grid grid-cols-2'>
                 {projects.map(({ id, image, title, description, tags, source, visit }) => {
                     return (
-                            <div className='z-100 m-auto my-20 md:inline-block max-w-sm md:m-12 text-zinc-300 bg-inherit rounded-md shadow-lg shadow-indigo-300/50 pb-8 '>
+                            <div className='z-100 m-auto my-10 md:inline-block max-w-sm md:m-12 text-zinc-300 bg-inherit rounded-md shadow-lg shadow-indigo-300/50 pb-8 ' key={id}>
                                 <div key={id} className='z-100'>
-                                    <img src={image} alt="" className='w-[500px] rounded-md z-100' />
+                                    <Image src={image} alt="" className='w-[500px] rounded-md z-100' height={325} width={525}/>
                                     <h1 className='pt-4 text-4xl font-bold text-center text-cyan-300'>{title}</h1>
                                     <div className="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg py-1 m-auto my-4 max-w-[64px] "></div>
                                     <p className='p-2 text-center'>{description}</p>

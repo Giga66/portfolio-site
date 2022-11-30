@@ -1,5 +1,6 @@
 import React from 'react'
 import { stack } from '../constants'
+import Image from 'next/image'
 
 const Technologies = () => {
     return (
@@ -13,9 +14,9 @@ const Technologies = () => {
                 <div className='grid grid-cols-2 lg:grid lg:grid-cols-4 gap-6 '>
                     {stack.map((item, i) => {
                         return (
-                            <div className='bg-inherit rounded-md shadow-lg shadow-gray-600 text-zinc-300 font-medium my-10 hover:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 '>
+                            <div className='bg-inherit rounded-md shadow-lg shadow-gray-600 text-zinc-300 font-medium my-10 hover:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 ' key={i}>
                                 <div className='flex items-center ' key={i}>
-                                    <img src={item.img} className='h-16 ' />
+                                    <Image src={item.img} className='h-16 ' height={25} width={70} alt='/'/>
                                     <h1 className='pl-2 '>{item.title}</h1>
                                 </div>
                             </div>
