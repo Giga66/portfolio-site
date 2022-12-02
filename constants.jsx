@@ -1,25 +1,25 @@
 export const projects = [
     {
         title: 'MERN Project',
-        description: 'Using React, Node.js, Express & MongoDB I have created an app that tracks your job application statuses history and results',
+        description: 'Using React, Node.js, Express & MongoDB I have created an app that tracks your job application status, history and results',
         image: '/images/jobify.png',
         tags: ['Mongo', 'Express', 'React', 'Node'],
         source: 'https://github.com/Giga66/Jobify',
-        visit: 'https://jobify-proj-88753.web.app/landing',
+        visit: 'https://jobify-project-1.onrender.com/',
         id: 0
     },
     {
         title: 'React Project',
-        description: 'Using latest React practices and figma I have built a stunning landing page from scratch',
+        description: 'Using latest React practices and figma I have built a stunning landing page',
         image: '/images/gpt3.png',
         tags: ['JavaScript', 'React', 'CSS3', 'HTML5'],
         source: 'https://github.com/Giga66/React-Project',
-        visit: 'https://gpt3-proj.web.app/',
+        visit: 'https://gpt3-proj.firebaseapp.com/',
         id: 1
     },
     {
         title: 'Portfolio Site',
-        description: 'Using Next.js and Tailwind I have built this portfolio website',
+        description: 'Using Next.js and Tailwind, I built this portfolio website',
         image: '/images/portfolio.png',
         tags: ['Next.js', 'Tailwind', 'Firebase'],
         source: 'https://github.com/Giga66/portfolio-site',
